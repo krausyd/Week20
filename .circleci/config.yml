@@ -3,5 +3,5 @@ jobs:
   hello-world-job:
     docker:
       - image: cimg/base:current
-    step:
+    steps:
       - run: echo "Hello, World!"
