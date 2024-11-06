@@ -22,7 +22,8 @@
     "clean": "rm -rf .nyc_output && rm -rf coverage && rm -rf server/dist && rm -rf client/dist && rm -rf **/tsconfig.tsbuildinfo",
     "prestart": "npm run clean",
     "prestart:dev": "npm run clean",
-    "postinstall": "npm run install:all"
+    "postinstall": "npm run install:all",
+    "build": "npm run client:build && npm run server:build"
   },
   "keywords": [],
   "author": "",
