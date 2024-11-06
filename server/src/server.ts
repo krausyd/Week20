@@ -20,6 +20,30 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+
+
+let age = 35;
+let nationality = "usa"
+
+if (age >= 18 && age < 21 && nationality == "usa") {
+  console.log("you are and adult but cant drink")
+} else if (age >= 18 && nationality == "mex") {
+  console.log("you can drink")
+} else if (age > 21) {
+  console.log(" congrats you can drink")
+} else {
+  console.log(" you are a baby")
+}
+
+/*
+test case 1:
+test age: 0 no matter nationality
+test case 2:
+test age 17 no matter nationality
+test case 3:
+test age 18 nationality mex
+*/
+
 app.listen(PORT, () => {
   console.log(`API server running on port ${PORT}!`);
 });
